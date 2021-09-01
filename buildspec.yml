@@ -11,11 +11,11 @@ phases:
     commands:
       - echo Build started on 'date'
       - mvn package
-      - mv target/*.war ./Project_2.war
+      - mv target/*.war ./p2_api.war
   post_build:
     commands:
       - echo Build completed on 'date'
-      - unzip Project_2.war -d artifact/
+      - unzip p2_api.war -d artifact/
       - mv artifact/WEB-INF WEB-INF
 artifacts:
   files:
